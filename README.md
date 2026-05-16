@@ -25,10 +25,7 @@ Both services are:
 
 # Architecture
 
-```
 ![1](1.png)
-
-```
 
 ---
 
