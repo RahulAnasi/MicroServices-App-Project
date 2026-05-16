@@ -26,7 +26,8 @@ Both services are:
 # Architecture
 
 ```
-<img width="950" height="632" alt="image" src="https://github.com/user-attachments/assets/a8e45927-c5ff-4409-8804-44b125bd194b" />
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/37340a9a-0873-4920-947d-c4f02be30e95" />
+
 
 ```
 
