@@ -142,10 +142,10 @@ kubectl apply -f product-deployment.yaml
 ## Apply Services
 
 ```
-```
 kubectl apply -f user-service.yaml
 kubectl apply -f product-service.yaml
 ```
+
 ### Sample Response
 
 ```
@@ -154,23 +154,19 @@ kubectl apply -f product-service.yaml
 
 ```
 
-```
-
 # Scaling Example
 
 Scale User Service to 5 replicas:
 
-```bash
+```
 kubectl scale deployment user-deployment --replicas=5
 ```
-
----
 
 # Rolling Update Example
 
 Update deployment image:
 
-```bash
+```
 kubectl edit deployment user-deployment
 ```
 
@@ -184,7 +180,7 @@ Kubernetes automatically performs:
 
 Delete a pod manually:
 
-```bash
+```
 kubectl delete pod <pod-name>
 ```
 
