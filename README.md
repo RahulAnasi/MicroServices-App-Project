@@ -122,8 +122,11 @@ docker run -d -p 3001:3001 product-service
 ### Sample Response
 
 ![4](4.png)
+
 ![5](5.png)
+
 ![6](6.png)
+
 ---
 
 # Kubernetes Deployment
@@ -148,11 +151,11 @@ kubectl apply -f product-service.yaml
 
 ### Sample Response
 
-```
+
 
 ![8](8.png)
 
-```
+
 
 # Scaling Example
 
