@@ -26,6 +26,7 @@ Both services are:
 # Architecture
 
 ```
+<img width="950" height="632" alt="image" src="https://github.com/user-attachments/assets/a8e45927-c5ff-4409-8804-44b125bd194b" />
 
 ```
 
@@ -87,11 +88,28 @@ microservices-project/
 
 ## User Service
 
-```text
-http://<EC2-PUBLIC-IP>:30080/users
+```
+http://localhost:3000/users
 ```
 
 ### Sample Response
+
+```
+<img width="642" height="270" alt="image" src="https://github.com/user-attachments/assets/978b0893-3ca4-4c23-902b-d5a0534bb327" />
+
+```
+
+## Product Service
+
+```
+http://localhost:3001/products
+```
+
+### Sample Response
+
+```
+<img width="582" height="237" alt="image" src="https://github.com/user-attachments/assets/22a51006-ec6b-4451-abc2-f7c6e9e33db6" />
+
 
 ```
 # Docker Workflow
@@ -99,38 +117,58 @@ http://<EC2-PUBLIC-IP>:30080/users
 ## Build Docker Images
 
 ```bash
-docker build -t user-service:v1 .
-docker build -t product-service:v1 .
+docker build -t user-service .
+docker build -t product-service .
 ```
 
 ## Run Containers
 
-```bash
-docker run -d -p 3000:3000 user-service:v1
-docker run -d -p 3001:3001 product-service:v1
 ```
+docker run -d -p 3000:3000 user-service
+docker run -d -p 3001:3001 product-service
+```
+### Sample Response
 
+```
+<img width="627" height="262" alt="image" src="https://github.com/user-attachments/assets/fbc494a1-276e-4290-b022-c5a03cdff633" />
+
+<img width="602" height="256" alt="image" src="https://github.com/user-attachments/assets/c4510052-4229-48af-930c-983fb46fabf6" />
+
+<img width="756" height="112" alt="image" src="https://github.com/user-attachments/assets/01383697-bf5a-4575-bb7f-6d0ff5fe3947" />
+
+```
 ---
 
 # Kubernetes Deployment
 
 ## Apply Deployments
 
-```bash
+```
 kubectl apply -f user-deployment.yaml
 kubectl apply -f product-deployment.yaml
 ```
 
+### Sample Response
+
+```
+<img width="752" height="372" alt="image" src="https://github.com/user-attachments/assets/5193a736-f552-4280-abca-0486b117e90b" />
+
 ## Apply Services
 
-```bash
+```
+```
 kubectl apply -f user-service.yaml
 kubectl apply -f product-service.yaml
 ```
+### Sample Response
 
----
+```
 
+<img width="752" height="97" alt="image" src="https://github.com/user-attachments/assets/741b7fca-3694-4d63-a567-ede5a2e61e1d" />
 
+```
+
+```
 
 # Scaling Example
 
