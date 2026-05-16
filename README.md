@@ -125,8 +125,6 @@ docker run -d -p 3001:3001 product-service
 
 ![5](5.png)
 
-![6](6.png)
-
 ---
 
 # Kubernetes Deployment
@@ -140,7 +138,7 @@ kubectl apply -f product-deployment.yaml
 
 ### Sample Response
 
-![7](7.png)
+![8](8.png)
 
 ## Apply Services
 
@@ -153,7 +151,7 @@ kubectl apply -f product-service.yaml
 
 
 
-![8](8.png)
+![9](9.png)
 
 
 
